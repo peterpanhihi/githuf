@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+	<title>Hello World!</title>
+</head>
+<body>
+	
+	<button id="pan">Click</button>
+	<button id="clear">Clear</button>
+	<div id="result">HELLO WORLD</div>
+<script src="js/zepto.js"></script>
+<script src="js/pan.js"></script>
+
+<script>
+$('#pan').click(function(){
+	PAN.clickIt($('#result'));
+});
+
+$('#clear').click(function(){
+	$('#result').html('');
+});
+</script>
+</body>
+</html>
